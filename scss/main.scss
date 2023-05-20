@@ -8,4 +8,34 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: $primary-color;
+    font-family: $font-stack;
+}
+
+nav {
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: $primary-text-color;
+    padding: 0 32px;
+    p {
+        font-size: 1.3rem;
+    }
+    .icons {
+        display: flex;
+        gap: 8px;
+        button {
+            background: none;
+            border-style: none;
+            cursor: pointer;
+        }
+    }
+}
+
+footer {
+    $background: #FA9500;
+    background-color: $background;
+    width: 100%;
+    height: 250px;
 }
