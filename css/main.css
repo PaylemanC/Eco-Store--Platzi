@@ -76,13 +76,14 @@ article, section {
   font-weight: lighter;
   margin-bottom: 32px;
 }
-#products .products__cards-container {
+#products .products__healthcare .products__cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
+  gap: 32px;
+  margin-bottom: 64px;
   justify-items: center;
 }
-#products .products__cards-container .product__card {
+#products .products__healthcare .products__cards-container .product__card {
   max-width: 280px;
   background-color: #FFDAC6;
   color: #7C6A0A;
@@ -92,26 +93,26 @@ article, section {
   padding: 16px 32px;
   border-radius: 8px;
 }
-#products .products__cards-container .product__card .product__card-icon {
+#products .products__healthcare .products__cards-container .product__card .product__card-icon {
   display: flex;
   justify-content: flex-end;
 }
-#products .products__cards-container .product__card .product__card-icon svg {
+#products .products__healthcare .products__cards-container .product__card .product__card-icon svg {
   cursor: pointer;
 }
-#products .products__cards-container .product__card .product__card-img {
+#products .products__healthcare .products__cards-container .product__card .product__card-img {
   display: flex;
   justify-content: center;
 }
-#products .products__cards-container .product__card .product__card-img img {
+#products .products__healthcare .products__cards-container .product__card .product__card-img img {
   width: 100%;
   border-radius: 8px;
 }
-#products .products__cards-container .product__card h3 {
+#products .products__healthcare .products__cards-container .product__card h3 {
   font-size: 1.3rem;
   margin-bottom: 8px;
 }
-#products .products__cards-container .product__card p {
+#products .products__healthcare .products__cards-container .product__card p {
   font-size: 1.2rem;
   margin-bottom: 8px;
 }

@@ -88,44 +88,47 @@ article, section {
         font-weight: lighter;
         margin-bottom: 32px;
     }
-    .products__cards-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 16px;
-        justify-items: center;
-        .product__card {
-            max-width: 280px; 
-            background-color: $secondary-color;
-            color: $primary-text-color;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            padding: 16px 32px;
-            border-radius: 8px;
-            .product__card-icon {
+    .products__healthcare {
+        .products__cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 32px;
+            margin-bottom: 64px;
+            justify-items: center;
+            .product__card {
+                max-width: 280px; 
+                background-color: $secondary-color;
+                color: $primary-text-color;
                 display: flex;
-                justify-content: flex-end;
-                svg {
-                    cursor: pointer;
+                flex-direction: column;
+                gap: 16px;
+                padding: 16px 32px;
+                border-radius: 8px;
+                .product__card-icon {
+                    display: flex;
+                    justify-content: flex-end;
+                    svg {
+                        cursor: pointer;
+                    }
                 }
-            }
-            .product__card-img {
-                display: flex;
-                justify-content: center;
-                img {
-                    width: 100%;
-                    border-radius: 8px;
+                .product__card-img {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        width: 100%;
+                        border-radius: 8px;
+                    }
                 }
-            }
-            h3 {
-                font-size: 1.3rem;
-                margin-bottom: 8px;
-            }
-            p {
-                font-size: $paragraph-size;
-                margin-bottom: 8px;
-            }
-        }        
+                h3 {
+                    font-size: 1.3rem;
+                    margin-bottom: 8px;
+                }
+                p {
+                    font-size: $paragraph-size;
+                    margin-bottom: 8px;
+                }
+            }        
+        }
     }
 }
 
