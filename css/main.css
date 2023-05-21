@@ -1,9 +1,12 @@
 body {
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #FFEFE7;
-  font-family: "IBM Plex Sans", sans-serif;
 }
 
 nav {
@@ -12,19 +15,59 @@ nav {
   display: flex;
   justify-content: space-between;
   color: #7C6A0A;
-  padding: 0 32px;
+  padding: 16px 32px;
+  align-items: center;
 }
 nav p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 nav .icons {
   display: flex;
-  gap: 8px;
+  gap: 32px;
 }
 nav .icons button {
   background: none;
   border-style: none;
   cursor: pointer;
+}
+
+article, section {
+  padding: 0 32px;
+}
+
+.introduction {
+  color: #7C6A0A;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.introduction .introduction__info {
+  max-width: 800px;
+}
+.introduction .introduction__info h1 {
+  font-size: 2.3rem;
+  margin-bottom: 28px;
+}
+.introduction .introduction__info p {
+  font-size: 1.2rem;
+  padding-bottom: 48px;
+}
+.introduction .introduction__info a {
+  background-color: #FA9500;
+  padding: 16px 32px;
+  border-radius: 40px;
+  color: white;
+  text-decoration: none;
+}
+.introduction .introduction__img {
+  display: flex;
+  justify-content: center;
+}
+.introduction .introduction__img img {
+  border-radius: 16px;
+  max-width: 280px;
 }
 
 footer {
