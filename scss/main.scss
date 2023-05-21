@@ -130,6 +130,16 @@ article, section {
             }        
         }
     }
+    .products__furniture {
+        @extend .products__healthcare;
+        .products__cards-container {
+            .product__card {
+                //Estilos que no se aplican:
+                background-color: $tertiary-color;
+                color: white;
+            }
+        }
+    }
 }
 
 footer {
