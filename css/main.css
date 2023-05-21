@@ -32,10 +32,10 @@ nav .icons button {
 }
 
 article, section {
-  padding: 0 32px;
+  padding: 16px 32px;
 }
 
-.introduction {
+#introduction {
   color: #7C6A0A;
   display: flex;
   align-items: center;
@@ -43,31 +43,77 @@ article, section {
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.introduction .introduction__info {
+#introduction .introduction__info {
   max-width: 800px;
 }
-.introduction .introduction__info h1 {
-  font-size: 2.3rem;
+#introduction .introduction__info h1 {
+  font-size: 2.8rem;
   margin-bottom: 28px;
 }
-.introduction .introduction__info p {
+#introduction .introduction__info p {
   font-size: 1.2rem;
   padding-bottom: 48px;
 }
-.introduction .introduction__info a {
+#introduction .introduction__info a {
   background-color: #FA9500;
   padding: 16px 32px;
   border-radius: 40px;
   color: white;
   text-decoration: none;
 }
-.introduction .introduction__img {
+#introduction .introduction__img {
   display: flex;
   justify-content: center;
 }
-.introduction .introduction__img img {
+#introduction .introduction__img img {
   border-radius: 16px;
   max-width: 280px;
+}
+
+#products h2 {
+  color: #7C6A0A;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin-bottom: 32px;
+}
+#products .products__cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  justify-items: center;
+}
+#products .products__cards-container .product__card {
+  max-width: 280px;
+  background-color: #FFDAC6;
+  color: #7C6A0A;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+#products .products__cards-container .product__card .product__card-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+#products .products__cards-container .product__card .product__card-icon svg {
+  cursor: pointer;
+}
+#products .products__cards-container .product__card .product__card-img {
+  display: flex;
+  justify-content: center;
+}
+#products .products__cards-container .product__card .product__card-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+#products .products__cards-container .product__card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+#products .products__cards-container .product__card p {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
 }
 
 footer {
