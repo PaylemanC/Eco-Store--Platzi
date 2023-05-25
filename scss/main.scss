@@ -6,6 +6,13 @@ $font-stack: 'IBM Plex Sans' , sans-serif;
 $paragraph-size: 1.2rem;
 $quaternary-color: #FA9500;
 
+@mixin displayFlex($direction: null, $content, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
 body {
     background-color: $primary-color;
     font-family: $font-stack;
@@ -20,11 +27,9 @@ body {
 nav {
     width: auto;
     height: 100px;
-    display: flex;
-    justify-content: space-between;
+    @include displayFlex(space-between, center);
     color: $primary-text-color;
     padding: 16px 32px;
-    align-items: center;
     p {
         font-size: 1.5rem;
     }
@@ -48,10 +53,8 @@ article, section {
 
 #introduction {
     color: $primary-text-color;
-    display: flex;
-    align-items: center;
+    @include displayFlex(space-between, center);
     gap: 32px;
-    justify-content: space-between;
     margin-bottom: 40px;
     .introduction__info {
         max-width: 800px;
@@ -72,8 +75,7 @@ article, section {
         }
     }
     .introduction__img {
-        display: flex;
-        justify-content: center;
+        @include displayFlex($content: center);
         img {
             border-radius: 16px;
             max-width: 280px;
@@ -105,15 +107,14 @@ article, section {
                 padding: 16px 32px;
                 border-radius: 8px;
                 .product__card-icon {
-                    display: flex;
-                    justify-content: flex-end;
+                    @include displayFlex($content: flex-end);
                     svg {
                         cursor: pointer;
                     }
                 }
                 .product__card-img {
                     display: flex;
-                    justify-content: center;
+                    @include displayFlex($content: center);
                     img {
                         width: 100%;
                         border-radius: 8px;

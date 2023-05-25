@@ -14,9 +14,9 @@ nav {
   height: 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #7C6A0A;
   padding: 16px 32px;
-  align-items: center;
 }
 nav p {
   font-size: 1.5rem;
