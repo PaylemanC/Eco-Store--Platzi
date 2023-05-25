@@ -38,9 +38,9 @@ article, section {
 #introduction {
   color: #7C6A0A;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 32px;
-  justify-content: space-between;
   margin-bottom: 40px;
 }
 #introduction .introduction__info {
@@ -102,7 +102,8 @@ article, section {
 }
 #products .products__healthcare .products__cards-container .product__card .product__card-img, #products .products__furniture .products__cards-container .product__card .product__card-img {
   display: flex;
-  justify-content: center;
+  display: flex;
+  justify-content: flex-end;
 }
 #products .products__healthcare .products__cards-container .product__card .product__card-img img, #products .products__furniture .products__cards-container .product__card .product__card-img img {
   width: 100%;
