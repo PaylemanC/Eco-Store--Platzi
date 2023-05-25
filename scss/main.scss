@@ -6,7 +6,7 @@ $font-stack: 'IBM Plex Sans' , sans-serif;
 $paragraph-size: 1.2rem;
 $quaternary-color: #FA9500;
 
-@mixin displayFlex($direction, $content, $align) {
+@mixin displayFlex($direction: row, $content, $align) {
     display: flex;
     flex-direction: $direction;
     justify-content: $content;
@@ -139,6 +139,35 @@ article, section {
                 background-color: $tertiary-color;
                 color: white;
             }
+        }
+    }
+}
+
+#info {
+    @extend #products;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    h2 {
+        font-weight: bold;
+    }
+    .about-us__mission {
+        @include displayFlex(null, space-around, center);
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+        .about-us__mission--earth {
+            @include displayFlex(null, null, center);
+            max-width: 440px;
+            gap: 16px;
+            color: $quaternary-color;
+            font-size: $paragraph-size;
+            text-align: center;
+            img {
+                width: 116px;
+            }
+        }
+        .about-us__mission--innovation {
+            @extend .about-us__mission--earth;
         }
     }
 }
