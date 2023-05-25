@@ -170,6 +170,21 @@ article, section {
             @extend .about-us__mission--earth;
         }
     }
+    .info__gallery {
+        .gallery__container {
+            @include displayFlex(null, space-between, center);
+            height: 380px;
+            img {
+                height: 100%;
+                width: 30%;
+                object-fit: cover;
+                border-radius: 48px;
+                &:hover {
+                    transform: scale(1.04);
+                }
+            }
+        }
+    }
 }
 
 footer {

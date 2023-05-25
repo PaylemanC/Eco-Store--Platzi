@@ -149,6 +149,23 @@ article, section {
 #info .about-us__mission .about-us__mission--earth img, #info .about-us__mission .about-us__mission--innovation img {
   width: 116px;
 }
+#info .info__gallery .gallery__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 380px;
+}
+#info .info__gallery .gallery__container img {
+  height: 100%;
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 48px;
+}
+#info .info__gallery .gallery__container img:hover {
+  transform: scale(1.04);
+}
+
 footer {
   background-color: #FA9500;
   width: 100%;
